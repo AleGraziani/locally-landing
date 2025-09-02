@@ -1,7 +1,3 @@
-# Fallback SOLO para la SPA "tiendas"
-# (la regla específica va primero)
- /tiendas/*      /tiendas/index.html   200
+/tiendas/*    /tiendas/index.html    200
+/*            /index.html            200
 
-# (Opcional) Fallback global para URLs rotas del resto del sitio
-# (si lo necesitás, SIEMPRE debajo)
- /*               /index.html           200
