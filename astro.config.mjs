@@ -7,8 +7,4 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  redirects: {
-    "/tiendas": "/tiendas/index.html",
-    "/tiendas/": "/tiendas/index.html",
-  },
 })
