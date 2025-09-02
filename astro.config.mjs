@@ -7,4 +7,10 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  redirects: {
+    "/tiendas/[...path]": {
+      status: 301,
+      destination: "/tiendas/index.html",
+    },
+  },
 })
