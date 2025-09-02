@@ -8,7 +8,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   redirects: {
-    "/tiendas": "/proyecto/index.html",
-    "/tiendas/": "/proyecto/index.html",
+    "/tiendas": "/tiendas/index.html",
+    "/tiendas/": "/tiendas/index.html",
   },
 })
