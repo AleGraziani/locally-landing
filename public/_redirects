@@ -1,2 +1,1 @@
 /tiendas/*    /tiendas/index.html    200
-/tiendas/:splat /tiendas/index.html 200
