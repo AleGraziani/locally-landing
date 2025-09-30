@@ -1,0 +1,23 @@
+---
+import Image from "astro/components/Image.astro"
+import cardImg from "../assets/images/cafeteria.png"
+const rating = 4.1
+const reviewsCount = 94
+---
+
+<div class="relative w-[60vw] max-w-96 aspect-[2/3] p-2 bg-linear-to-b from-gray-200 to-white rounded-xl shadow-lg shadow-800 grid grid-rows-[40%_1fr] border border-white">
+    <Image src={cardImg} alt="Alimentos naturales" class="w-full h-full rounded-2xl min-h-0 object-cover border-2 border-white"/>
+   
+    <div id="card-content" class="w-full h-full px-2 flex flex-col justify-start items-center gap-0.5">
+        <div id="store-name" class="w-full h-max font-semibold text-gray-800 text-center self-center text-[clamp(1rem,_4.5vw,_1.5rem)]">Café Don Juan</div>
+        <div id="category" class="w-max mx-auto px-3  h-max text-[clamp(0.75rem,_3.25vw,_1rem)] text-center text-yellow-900 rounded-l-full rounded-br-full bg-amber-700/30">Cafetería-Pastelería</div>
+        <div class="flex items-center text-sm text-gray-700">
+            <svg class="w-4 h-4 fill-yellow-500 mr-1" viewBox="0 0 24 24">
+                <path d="M12 17.3l-6.16 3.24 1.18-6.88L1 8.92l6.92-1L12 1.5l3.08 6.42 6.92 1-5.02 4.74 1.18 6.88z"/>
+            </svg>
+            <span class="font-medium">{rating.toFixed(1)}</span>
+            <span class="text-gray-500"> · {reviewsCount} reseñas</span>
+        </div>
+    </div>
+
+</div>
